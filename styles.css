@@ -1,1 +1,120 @@
-/*  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --main-bg-color: #FFCAE9;
+    --white-bg-color: #f8f9fa;
+    --primary: #43B929;
+    --secundary: #FF37A6;
+    --secundary-dark: #841934;
+}
+
+/* Reset */
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+/* SECCION DE REGISTRO */
+
+#register {
+    height: 100vh;
+    padding: 50px 50px;
+    background: url("https://i0.wp.com/www.tiempodejujuy.com.ar/wp-content/uploads/2020/09/JUJUY-4.jpg?resize=696%2C392&ssl=1");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #FFCAE9; */
+}
+
+.description-register {
+    background-color: rgba(255,255,255,0.6);
+    float: left;
+    width: 48%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description-register h1 {
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+.description-register p {
+    font-size: 2rem;
+    color: black;
+}
+
+.contact-form{
+    background-color: rgba(255,255,255,0.6);
+    float: right;
+    width: 48%;
+    height: 100%;
+    padding: 30px;
+}
+
+.contact-form h1{
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.contact-form form{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-group label{
+    color: black;
+}
+
+form .form-control {
+    /* display: block; */
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none; 
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid #ccc;
+}
+
+/* Boton Form */
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-light {
+    background: var(--secundary);
+    border: 1px solid var(--secundary-dark);
+    color: #fff;
+    width: 100%;
+}
+
+.btn-light:hover {
+    background: var(--secundary-dark);
+    border: 1px solid var(--secundary-dark);
+    color: #fff;
+}
