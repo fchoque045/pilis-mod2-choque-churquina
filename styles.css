@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
+/* Reset */
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html, body {
-    background-color: var(--main-bg-color);
+    background-color: var(--white-bg-color);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,10 +19,12 @@ html, body {
 }
 
 :root {
+
+    /* Paleta de colores = https://coolors.co/palette/5cf64a-87e752-43b929-ffcae9-ff37a6 */
+    
     --primary-color: #158615;
     --primary-color-dark: #0b5711;
     --accent-color: #FFF8F0;
-    --main-bg-color: #FFCAE9;
     --secundary-bg-color: #87E752;
     --white-bg-color: #F8F9FA;
     --gray-bg-color: #EDEDED;
@@ -23,6 +32,7 @@ html, body {
     --primary-dark: #065e41;
     --secundary: #FF37A6;
     --secundary-dark: #841934;
+    --form-bg-color: #FFCAE9;
 }
 
 /* NAVBAR */
@@ -82,19 +92,19 @@ html, body {
     text-align: center;
     width: 45%;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 2%; 
 }
 
 #home div h1 {
-    font-size: 5rem;
-    text-align: center;
-
-}
-
-#home div h2 {
     font-size: 3rem;
     text-align: center;
+    color: var(--primary);
+}
 
+#home div p {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 100px;
 }
 
 #home div img {
@@ -116,18 +126,19 @@ html, body {
     font-size: 3rem;
     text-align: center;
     float: right;
-
+    color: var(--secundary);
 }
 
 #evento p {
     width: 45%;
-    font-size: x-large;
+    font-size: 1.5rem;
     text-align: center;
     float: right;
+    padding-top: 100px;
 }
 
 #evento iframe {
-    height: 50%;
+    height: 80%;
     width: 50%;
     float: left;
     text-align: center;
@@ -144,8 +155,9 @@ html, body {
 }
 
 #nosotros h2 {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
+    color: var(--primary);
 }
 
 #nosotros div {
@@ -154,52 +166,32 @@ html, body {
     margin-left: 2%;
     margin-right: 2%;
     text-align: center;
+    padding-top: 2%;
 }
 
 #nosotros div h3 {
     font-size: x-large;
+    padding-bottom: 3%;
+}
+
+#nosotros div p {
+    padding-bottom: 2%;
 }
 
 #nosotros div img {
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
+    padding-top: 2%;
 }
 
 
-/* FOOTER */
-footer {
-    text-align: center;
-    margin: 3%;
-}
-
-footer img {
-    height: 3%;
-    width: 3%;
-}
-
-/* Reset */
-* { 
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-  
-
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-}
 
 /* SECCION DE REGISTRO */
 
 #register {
     height: 100vh;
     padding: 50px 50px;
-    background: url("https://i0.wp.com/www.tiempodejujuy.com.ar/wp-content/uploads/2020/09/JUJUY-4.jpg?resize=696%2C392&ssl=1");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: #FFCAE9; */
+    background-color: var(--form-bg-color);
 }
 
 .description-register {
@@ -288,7 +280,7 @@ form .form-control {
 /* SECCION DE CLIMA */
 #clima {
     height: 50vh;
-    background-color: var(--secundary-bg-color);
+    /* background-color: var(--secundary-bg-color); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -298,6 +290,7 @@ form .form-control {
 .card-clima{
     background-color: var(--white-bg-color);
     width: 60vh;
+    border: 1px solid var(--secundary-bg-color);
 }
 
 .card-title{
@@ -361,4 +354,15 @@ form .form-control {
 
 #description-weather {
     color: var(--primary-dark);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 3%;
+}
+
+footer img {
+    height: 3%;
+    width: 3%;
 }

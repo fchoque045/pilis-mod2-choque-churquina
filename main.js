@@ -19,7 +19,7 @@ function onClick (event) {
     })
         .then((response) => response.json())
         .then((json) => { 
-            console.log(json);
+            
             Swal.fire(
                 'Enviado',
                 'Gracias por inscribite al evento', 
@@ -53,7 +53,6 @@ function displayData(ApiWeather){
         let element = ApiWeather.list[i];
         let date = new Date(element.dt_txt);
         if (date > dateEvento) {
-            console.log(element);
             temp.textContent = element['main']['temp']
             description.textContent = element['weather'][0]['description']
             humidity.textContent = `${element['main']['temp']}%`
