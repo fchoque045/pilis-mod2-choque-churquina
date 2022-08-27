@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
-
-    <title>Document</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <title>Feria de las Plantas</title>
 </head>
 
 <body>
@@ -71,16 +71,67 @@
             </div>
 
         </section>
-
-
+        
+        <section id="register">
+            <div class="description-register">
+                <h1>Próximo evento</h1>
+                <p>Sumate para potenciar</p>
+                <p>el comercio local</p>
+            </div> 
+            <div class="contact-form">
+                <h1>Formulario de contacto</h1>
+                <form action="" id="formulario">
+                    <div class="form-group">
+                        <label for="comercio">Comercio</label>
+                        <input id="comercio" class="form-control" type="text" autocomplete="off">
+                      </div>
+                    <div class="form-group">
+                      <label for="titular">Titular</label>
+                      <input id="titular" class="form-control" type="text" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input id="email" class="form-control" type="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input id="celular" class="form-control" type="text" autocomplete="off">
+                      </div>
+                    <button id="enviar" class="btn btn-light">Enviar</button>
+                  </form>
+            </div>
+        </section>
+        
+        <section id="clima">
+        <h2>Así estará el clima en el lugar del evento</h2>
+            <div class="card-clima">
+            <div class="card-title">
+                <p class="title-one">Ciudad Cultural</p>
+                <p class="title-two">30 de Agosto</p>
+            </div>
+            <div class="card-content">
+                <div class="clima-data">
+                    <p class="text-horario">Horario 9:00 am</p>
+                    <span id="temp">00°</span>
+                    <p class="text-humidity">Humedad <span id="humidity">0%</span></p>
+                    <p class="text-speed">Velocidad del viento <span id="speed">00m/s</span></p>
+                </div>
+                <div class="clima-icon"> 
+                    <img src="assets/icons-clima/notFound.png" alt="" id="icon-weather">
+                    <span id="description-weather">descripcion clima</span>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <h1>Contacto</h1>
         <a href="https://api.whatsapp.com/send?phone=5493881234567&text=Hola,%20puedes%20escribirnos%20si%20tienes%20alguna%20duda."
             target="_blank"> <img src="/imagenes/WhatsApp.svg.webp" alt=""></a>
     </footer>
-
     
+    <script src="main.js"></script>
 </body>
 
 </html>
