@@ -172,14 +172,19 @@ form .form-control {
     font-weight: bold;
 }
 
-.grados {
+#temp {
     color: var(--primary-dark);
     font-weight: bold;
     font-size: 3rem;
 }
 
-.text-relleno {
+.text-humidity {
     color: gray;
+}
+
+.text-speed {
+    color: gray;
+    font-size: 0.7rem;
 }
 
 .clima-icon {    
@@ -188,10 +193,10 @@ form .form-control {
     align-items: center;
 }
 
-.icon {
+#icon-weather {
     width: 100px;
 }
 
-.icon-detalle {
+#description-weather {
     color: var(--primary-dark);
 }
