@@ -6,8 +6,11 @@
 
 :root {
     --main-bg-color: #FFCAE9;
-    --white-bg-color: #f8f9fa;
+    --secundary-bg-color: #87E752;
+    --white-bg-color: #F8F9FA;
+    --gray-bg-color: #EDEDED;
     --primary: #43B929;
+    --primary-dark: #065e41;
     --secundary: #FF37A6;
     --secundary-dark: #841934;
 }
@@ -117,4 +120,78 @@ form .form-control {
     background: var(--secundary-dark);
     border: 1px solid var(--secundary-dark);
     color: #fff;
+}
+
+
+/* SECCION DE CLIMA */
+#clima {
+    height: 50vh;
+    background-color: var(--secundary-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-clima{
+    background-color: var(--white-bg-color);
+    width: 60vh;
+}
+
+.card-title{
+    background-color: var(--gray-bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.title-one {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.title-two {
+    color: grey;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.clima-data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-horario {
+    color: var(--primary-dark);
+    font-weight: bold;
+}
+
+.grados {
+    color: var(--primary-dark);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.text-relleno {
+    color: gray;
+}
+
+.clima-icon {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+}
+
+.icon-detalle {
+    color: var(--primary-dark);
 }
